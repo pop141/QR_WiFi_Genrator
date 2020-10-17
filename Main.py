@@ -23,7 +23,8 @@ def main():
 
              try:
                 QR = QRcoder(values['ssid'], values['password'], values['sec'])
-                QR.wifi_qr_code()
+                data = QR.wifi_qr_code()
+                sg.popup(data)
 
 
              except Exception as e:

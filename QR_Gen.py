@@ -42,6 +42,8 @@ class QRcoder():
             if event in (None, 'Quit'):
                 break
 
+        return f"PNG File saved to {self.file_path}{image}"
+
 
 
 
